@@ -22,6 +22,37 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 'lts/*'
+      - name: Faker2
+        run: |
+          bash Scripts/Sync.sh \
+            https://github.com/shufflewzc/faker2 main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/faker2 main
+      - name: Faker3
+        run: |
+          bash Scripts/Sync.sh \
+            https://github.com/shufflewzc/faker3 main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/faker3 main 
+      - name: HarbourToulu
+        run: |
+          bash Scripts/Sync.sh \
+            https://github.com/HarbourJ/HarbourToulu main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/HarbourToulu main
+      - name: bbk
+        run: |
+          bash Scripts/Sync.sh \
+            https://github.com/neUyNp8OIdO4Ejj/bbk_bak main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/bbk main
+      - name: tbk
+        run: |
+          bash Scripts/Sync.sh \
+            https://github.com/pea-cake/tbk main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/tbk main
+      - name: checkinpanel
+        run: |
+          bash Scripts/Sync.sh \
+            https://github.com/OreosLab/checkinpanel master \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/checkinpanel main  
+
       - name: JDHelloWorld
         run: |
           bash Scripts/Sync.sh \
