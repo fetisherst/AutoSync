@@ -22,57 +22,46 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 'lts/*'
-      - name: Faker2
+      - name: rime-holo
         run: |
           bash Scripts/Sync.sh \
-            https://github.com/shufflewzc/faker2 main \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/faker2 main
+            https://github.com/Eliot00/rime-holo master \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/rime-holo master
       - name: Faker3
         run: |
           bash Scripts/Sync.sh \
             https://github.com/shufflewzc/faker3 main \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/faker3 main 
-      - name: HarbourToulu
+      - name: rime-erbi
         run: |
           bash Scripts/Sync.sh \
-            https://github.com/HarbourJ/HarbourToulu main \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/HarbourToulu main
-      - name: bbk
+            https://github.com/yaocccc/rime master \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/rime-erbi master
+      - name: tiger-iOS-iRime
         run: |
           bash Scripts/Sync.sh \
-            https://github.com/neUyNp8OIdO4Ejj/bbk_bak main \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/bbk main
-      - name: tbk
+            https://github.com/owenyang0/tiger-iOS-iRime main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/tiger-iOS-iRime main
+      - name: rime-flypy-zrmfast
         run: |
           bash Scripts/Sync.sh \
-            https://github.com/pea-cake/tbk main \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/tbk main
+            https://github.com/functoreality/rime-flypy-zrmfast master \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/rime-flypy-zrmfast master
       - name: checkinpanel
         run: |
           bash Scripts/Sync.sh \
             https://github.com/OreosLab/checkinpanel master \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/checkinpanel main  
-      - name: JDHelloWorld
+      - name: rime-flypy
         run: |
           bash Scripts/Sync.sh \
-            https://github.com/JDHelloWorld/jd_scripts main \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/jd-scripts ts2js
-
-      - name: Ariszy
+            https://github.com/LufsX/rime master \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/rime-flypy master
+      - name: rime-pure
         run: |
           bash Scripts/Sync.sh \
             https://github.com/Ariszy/Private-Script master \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/Ariszy
-      - name: smiek2221
-        run: |
-          bash Scripts/Sync.sh \
-            https://github.com/smiek2221/scripts master \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/smiek2221
-      - name: X1a0He
-        run: |
-          bash Scripts/Sync.sh \
-            https://github.com/X1a0He/jd_scripts_fixed main \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/X1a0He
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/rime-pure master
       - name: QL-
         run: |
           bash Scripts/Sync.sh \
