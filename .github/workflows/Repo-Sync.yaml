@@ -10,7 +10,7 @@ on:
       - '.github/workflows/Repo-Sync.yaml'
 
   schedule:
-    - cron: 3-53/20 * * * *
+    - cron: 0 3 * * *
 
 jobs:
   sync-scripts:
@@ -27,11 +27,6 @@ jobs:
           bash Scripts/Sync.sh \
             https://github.com/Eliot00/rime-holo master \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/rime-holo master
-      - name: Faker3
-        run: |
-          bash Scripts/Sync.sh \
-            https://github.com/shufflewzc/faker3 main \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/fetisherst/faker3 main 
       - name: rime-erbi
         run: |
           bash Scripts/Sync.sh \
